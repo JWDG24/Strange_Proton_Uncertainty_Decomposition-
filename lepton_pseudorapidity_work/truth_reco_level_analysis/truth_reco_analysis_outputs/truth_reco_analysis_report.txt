@@ -1,0 +1,283 @@
+
+============================================================================
+ Truth / reco lepton-pseudorapidity analysis
+============================================================================
+
+Project root:
+  /mnt/c/Users/dugar/uncertainty_decomposition
+
+Data directory:
+  /mnt/c/Users/dugar/uncertainty_decomposition/data
+
+Correction definition: Truth / Reco
+Fiducial cuts: pT(l)>20 GeV, |eta(l)|<2.5, MET>25 GeV, mT(W)>40 GeV
+
+
+============================================================================
+SAMPLE: WCPy8plus
+============================================================================
+Tree: WCharmTree
+Entries: 49,475
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+SAMPLE: WCPy8minus
+============================================================================
+Tree: WCharmTree
+Entries: 49,666
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+SAMPLE: WCPyPartonplus
+============================================================================
+Tree: WCharmTree
+Entries: 72,191
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+SAMPLE: WCPyPartonminus
+============================================================================
+Tree: WCharmTree
+Entries: 72,084
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+SAMPLE: WCH7plus
+============================================================================
+Tree: WCharmTree
+Entries: 50,292
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+SAMPLE: WCH7minus
+============================================================================
+Tree: WCharmTree
+Entries: 49,997
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+SAMPLE: WCHPartonplus
+============================================================================
+Tree: WCharmTree
+Entries: 71,984
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+SAMPLE: WCHPartonminus
+============================================================================
+Tree: WCharmTree
+Entries: 72,252
+
+Resolved truth branches:
+  lep_pt   -> None
+  lep_eta  -> None
+  lep_phi  -> None
+  met_et   -> None
+  met_phi  -> None
+
+Resolved reco branches:
+  lep_pt   -> leptons_pt
+  lep_eta  -> leptons_eta
+  lep_phi  -> leptons_phi
+  met_et   -> met_et
+  met_phi  -> met_phi
+
+No complete truth/reco branch pair was found.
+This sample is NOT treated as a truth/reco sample.
+
+Potentially relevant branches present:
+  leptons_pt
+  leptons_eta
+  leptons_phi
+  leptons_E
+  leptons_charge
+  met_et
+  met_phi
+
+============================================================================
+ FINISHED
+============================================================================
+
+No file contained a complete, distinct truth/reco branch set that this script could identify.
+This means the current ntuples cannot yet be used for a genuine truth/reco correction with the branch names searched here. Inspect the diagnostic branch lists in this report before changing the aliases.
+
+Do NOT substitute the existing particle-level sample for reco level merely to force a truth/reco result.
+
+Report:
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work/truth_reco_level_analysis/truth_reco_analysis_outputs/truth_reco_analysis_report.txt
+

@@ -1,0 +1,176 @@
+
+========================================================================
+ W+c particle / parton event-matching check
+========================================================================
+
+Project root:
+  /mnt/c/Users/dugar/uncertainty_decomposition
+
+Data directory:
+  /mnt/c/Users/dugar/uncertainty_decomposition/data
+
+This script checks all eight ROOT files and then tests the four physically corresponding particle/parton pairs.
+
+========================================================================
+ INSPECTING ALL ROOT FILES
+========================================================================
+
+Sample: WCPy8plus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCPy8plus.root
+  Tree:    WCharmTree
+  Entries: 49,475
+  Candidate ID branches: EventNumber
+
+Sample: WCPyPartonplus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCPyPartonplus.root
+  Tree:    WCharmTree
+  Entries: 72,191
+  Candidate ID branches: EventNumber
+
+Sample: WCPy8minus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCPy8minus.root
+  Tree:    WCharmTree
+  Entries: 49,666
+  Candidate ID branches: EventNumber
+
+Sample: WCPyPartonminus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCPyPartonminus.root
+  Tree:    WCharmTree
+  Entries: 72,084
+  Candidate ID branches: EventNumber
+
+Sample: WCH7plus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCH7plus.root
+  Tree:    WCharmTree
+  Entries: 50,292
+  Candidate ID branches: EventNumber
+
+Sample: WCHPartonplus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCHPartonplus.root
+  Tree:    WCharmTree
+  Entries: 71,984
+  Candidate ID branches: EventNumber
+
+Sample: WCH7minus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCH7minus.root
+  Tree:    WCharmTree
+  Entries: 49,997
+  Candidate ID branches: EventNumber
+
+Sample: WCHPartonminus
+  File:    /mnt/c/Users/dugar/uncertainty_decomposition/data/WCharm_WCHPartonminus.root
+  Tree:    WCharmTree
+  Entries: 72,252
+  Candidate ID branches: EventNumber
+
+
+========================================================================
+ TESTING PARTICLE / PARTON MATCHING
+========================================================================
+
+========================================================================
+PAIR: Pythia W+
+========================================================================
+Particle: WCPy8plus (49,475 entries)
+Parton:   WCPyPartonplus (72,191 entries)
+
+Common candidate identifier branches:
+  EventNumber  <->  EventNumber
+
+Testing identifier: EventNumber <-> EventNumber
+  Particle unique IDs: 49,475
+  Parton unique IDs:   72,191
+  Particle duplicates: 0
+  Parton duplicates:   0
+  Common unique IDs:   35,663
+  Particle matched:    72.08%
+  Parton matched:      49.40%
+  Assessment: PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+BEST RESULT:
+  EventNumber <-> EventNumber
+  Match fraction of smaller unique set: 72.08%
+  PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+========================================================================
+PAIR: Pythia W-
+========================================================================
+Particle: WCPy8minus (49,666 entries)
+Parton:   WCPyPartonminus (72,084 entries)
+
+Common candidate identifier branches:
+  EventNumber  <->  EventNumber
+
+Testing identifier: EventNumber <-> EventNumber
+  Particle unique IDs: 49,666
+  Parton unique IDs:   72,084
+  Particle duplicates: 0
+  Parton duplicates:   0
+  Common unique IDs:   35,682
+  Particle matched:    71.84%
+  Parton matched:      49.50%
+  Assessment: PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+BEST RESULT:
+  EventNumber <-> EventNumber
+  Match fraction of smaller unique set: 71.84%
+  PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+========================================================================
+PAIR: Herwig W+
+========================================================================
+Particle: WCH7plus (50,292 entries)
+Parton:   WCHPartonplus (71,984 entries)
+
+Common candidate identifier branches:
+  EventNumber  <->  EventNumber
+
+Testing identifier: EventNumber <-> EventNumber
+  Particle unique IDs: 50,292
+  Parton unique IDs:   71,984
+  Particle duplicates: 0
+  Parton duplicates:   0
+  Common unique IDs:   36,188
+  Particle matched:    71.96%
+  Parton matched:      50.27%
+  Assessment: PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+BEST RESULT:
+  EventNumber <-> EventNumber
+  Match fraction of smaller unique set: 71.96%
+  PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+========================================================================
+PAIR: Herwig W-
+========================================================================
+Particle: WCH7minus (49,997 entries)
+Parton:   WCHPartonminus (72,252 entries)
+
+Common candidate identifier branches:
+  EventNumber  <->  EventNumber
+
+Testing identifier: EventNumber <-> EventNumber
+  Particle unique IDs: 49,997
+  Parton unique IDs:   72,252
+  Particle duplicates: 0
+  Parton duplicates:   0
+  Common unique IDs:   36,078
+  Particle matched:    72.16%
+  Parton matched:      49.93%
+  Assessment: PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+BEST RESULT:
+  EventNumber <-> EventNumber
+  Match fraction of smaller unique set: 72.16%
+  PARTIAL IDENTIFIER OVERLAP - INVESTIGATE
+
+
+========================================================================
+ FINISHED
+========================================================================
+
+Important: a common event identifier with near-complete unique overlap is strong evidence of event matching. Equal entry counts alone are NOT sufficient evidence.
+
+Detailed report written to:
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work/event_matching/event_matching_report.txt
+
