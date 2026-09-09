@@ -1,0 +1,35 @@
+Odd/even statistical stability study
+====================================
+
+Event split:
+  even = ROOT tree entry indices 0, 2, 4, ...
+  odd  = ROOT tree entry indices 1, 3, 5, ...
+
+Physics selection:
+  MET > 25.0 GeV
+  lepton pT > 20.0 GeV
+  |eta_lepton| < 2.5
+  m_T^W > 40.0 GeV
+
+Nominal weight:
+  weightvec[0]
+
+Split quantity:
+  abs_difference = |C_odd - C_even|
+  split_stat_uncertainty = abs_difference / 2
+
+Accepted-event counts:
+  WCH7minus: all=49997, odd=24998, even=24999
+  WCH7plus: all=50292, odd=25146, even=25146
+  WCHPartonminus: all=45076, odd=22617, even=22459
+  WCHPartonplus: all=45162, odd=22570, even=22592
+  WCPy8minus: all=49666, odd=24833, even=24833
+  WCPy8plus: all=49475, odd=24737, even=24738
+  WCPyPartonminus: all=45986, odd=23059, even=22927
+  WCPyPartonplus: all=46063, odd=23094, even=22969
+
+Generated pair outputs:
+  Pythia_plus
+  Pythia_minus
+  Herwig_plus
+  Herwig_minus

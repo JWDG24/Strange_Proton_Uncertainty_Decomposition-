@@ -1,0 +1,27 @@
+Weight-0 Pythia cross-check
+==========================
+
+Selection:
+  MET > 25.0 GeV
+  lepton pT > 20.0 GeV
+  |eta_lepton| < 2.5
+  m_T^W > 40.0 GeV
+
+Weight:
+  weightvec[0] only
+
+Discovered ROOT fragments:
+  WCPy8plus: 20
+  WCPy8minus: 20
+  WCPyPartonplus: 20
+  WCPyPartonminus: 20
+
+Processed samples:
+  WCPy8plus: entries=502383, after_mtw=502383
+  WCPy8minus: entries=483480, after_mtw=483480
+  WCPyPartonplus: entries=725220, after_mtw=465020
+  WCPyPartonminus: entries=701560, after_mtw=447220
+
+Completed correction pairs:
+  Pythia_plus
+  Pythia_minus
