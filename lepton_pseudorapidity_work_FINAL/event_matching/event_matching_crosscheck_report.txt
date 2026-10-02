@@ -1,0 +1,101 @@
+
+==========================================================================================
+ W+c EventNumber cross-check: all particle vs all parton samples
+==========================================================================================
+
+Project root: /mnt/c/Users/dugar/uncertainty_decomposition
+Data directory: /mnt/c/Users/dugar/uncertainty_decomposition/data
+
+The expected physical matches are the diagonal entries.
+
+Loading particle-level EventNumbers...
+  Pythia W+ : 49,475 entries, 49,475 unique, 0 duplicates
+  Pythia W- : 49,666 entries, 49,666 unique, 0 duplicates
+  Herwig W+ : 50,292 entries, 50,292 unique, 0 duplicates
+  Herwig W- : 49,997 entries, 49,997 unique, 0 duplicates
+
+Loading parton-level EventNumbers...
+  Pythia W+ : 72,191 entries, 72,191 unique, 0 duplicates
+  Pythia W- : 72,084 entries, 72,084 unique, 0 duplicates
+  Herwig W+ : 71,984 entries, 71,984 unique, 0 duplicates
+  Herwig W- : 72,252 entries, 72,252 unique, 0 duplicates
+
+COMMON UNIQUE EventNumbers
+------------------------------------------------------------------------------------------
+Particle / Parton         Pythia W+        Pythia W-        Herwig W+        Herwig W-
+------------------------------------------------------------------------------------------
+Pythia W+                    35,663           35,568           35,660           35,746
+Pythia W-                    35,918           35,682           35,711           35,921
+Herwig W+                    36,235           36,077           36,188           36,418
+Herwig W-                    36,125           36,054           36,110           36,078
+------------------------------------------------------------------------------------------
+
+PERCENTAGE OF PARTICLE SAMPLE MATCHED
+------------------------------------------------------------------------------------------
+Particle / Parton         Pythia W+        Pythia W-        Herwig W+        Herwig W-
+------------------------------------------------------------------------------------------
+Pythia W+                    72.08%           71.89%           72.08%           72.25%
+Pythia W-                    72.32%           71.84%           71.90%           72.33%
+Herwig W+                    72.05%           71.74%           71.96%           72.41%
+Herwig W-                    72.25%           72.11%           72.22%           72.16%
+------------------------------------------------------------------------------------------
+
+PERCENTAGE OF PARTON SAMPLE MATCHED
+------------------------------------------------------------------------------------------
+Particle / Parton         Pythia W+        Pythia W-        Herwig W+        Herwig W-
+------------------------------------------------------------------------------------------
+Pythia W+                    49.40%           49.34%           49.54%           49.47%
+Pythia W-                    49.75%           49.50%           49.61%           49.72%
+Herwig W+                    50.19%           50.05%           50.27%           50.40%
+Herwig W-                    50.04%           50.02%           50.16%           49.93%
+------------------------------------------------------------------------------------------
+
+MATCH FRACTION RELATIVE TO SMALLER UNIQUE SET
+------------------------------------------------------------------------------------------
+Particle / Parton         Pythia W+        Pythia W-        Herwig W+        Herwig W-
+------------------------------------------------------------------------------------------
+Pythia W+                    72.08%           71.89%           72.08%           72.25%
+Pythia W-                    72.32%           71.84%           71.90%           72.33%
+Herwig W+                    72.05%           71.74%           71.96%           72.41%
+Herwig W-                    72.25%           72.11%           72.22%           72.16%
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+ DIAGONAL VS WRONG-PAIR CHECK
+==========================================================================================
+
+Pythia W+:
+  Correct-pair match:       72.08%
+  Largest wrong-pair match: 72.25%
+  Difference:               -0.17 percentage points
+
+Pythia W-:
+  Correct-pair match:       71.84%
+  Largest wrong-pair match: 72.33%
+  Difference:               -0.48 percentage points
+
+Herwig W+:
+  Correct-pair match:       71.96%
+  Largest wrong-pair match: 72.41%
+  Difference:               -0.46 percentage points
+
+Herwig W-:
+  Correct-pair match:       72.16%
+  Largest wrong-pair match: 72.25%
+  Difference:               -0.09 percentage points
+
+==========================================================================================
+ INTERPRETATION
+==========================================================================================
+
+At least one intended pairing does not stand clearly above the wrong pairings. EventNumber overlap alone is therefore not sufficient to claim genuine event-by-event matching.
+
+The 10 percentage-point criterion above is only a diagnostic; inspect the full matrices before drawing a final conclusion.
+
+Output files:
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work/event_matching/event_matching_crosscheck_report.txt
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work/event_matching/event_matching_common_counts.csv
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work/event_matching/event_matching_particle_fraction.csv
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work/event_matching/event_matching_parton_fraction.csv
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work/event_matching/event_matching_smaller_set_fraction.csv
+

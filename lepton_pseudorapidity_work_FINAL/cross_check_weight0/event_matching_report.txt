@@ -1,0 +1,82 @@
+High-statistics particle/parton event-matching diagnostic
+==========================================================
+
+ROOT directory: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/cross_check_weight0/cross_check_ROOT_files
+
+This script will not treat matching filename suffixes or matching entry numbers as proof of event identity.
+
+==============================================================================
+CHANNEL: Pythia Wplus
+==============================================================================
+Particle fragments: 20
+Parton fragments:   20
+Paired suffixes:     20
+
+Fragment entry counts:
+  suffix 10: particle=25,137, parton=36,261
+  suffix 11: particle=25,137, parton=36,261
+  suffix 12: particle=25,018, parton=36,261
+  suffix 13: particle=25,137, parton=36,261
+  suffix 14: particle=25,137, parton=36,261
+  suffix 15: particle=25,137, parton=36,261
+  suffix 16: particle=25,018, parton=36,261
+  suffix 17: particle=25,137, parton=36,261
+  suffix 18: particle=25,137, parton=36,261
+  suffix 19: particle=25,018, parton=36,261
+  suffix 20: particle=25,137, parton=36,261
+  suffix 21: particle=25,137, parton=36,261
+  suffix 22: particle=25,137, parton=36,261
+  suffix 23: particle=25,137, parton=36,261
+  suffix 24: particle=25,137, parton=36,261
+  suffix 25: particle=25,137, parton=36,261
+  suffix 26: particle=25,137, parton=36,261
+  suffix 27: particle=25,137, parton=36,261
+  suffix 28: particle=25,137, parton=36,261
+  suffix 29: particle=25,137, parton=36,261
+
+First paired fragment: suffix 10
+Common branch names: 20
+ID-looking common branches:
+  EventNumber (class='', type='Int_t', scalar=False)
+  No common scalar integer/event-ID-like branch was found.
+
+Naive entry-number matching is definitely unsafe: corresponding particle/parton fragments contain different numbers of entries.
+VERDICT: No sufficiently unique common event identifier was found. Event-by-event particle/parton matching cannot be established from these ntuples using the available branches.
+
+==============================================================================
+CHANNEL: Pythia Wminus
+==============================================================================
+Particle fragments: 20
+Parton fragments:   20
+Paired suffixes:     20
+
+Fragment entry counts:
+  suffix 10: particle=24,176, parton=35,078
+  suffix 11: particle=24,176, parton=35,078
+  suffix 12: particle=24,166, parton=35,078
+  suffix 13: particle=24,166, parton=35,078
+  suffix 14: particle=24,176, parton=35,078
+  suffix 15: particle=24,176, parton=35,078
+  suffix 16: particle=24,166, parton=35,078
+  suffix 17: particle=24,166, parton=35,078
+  suffix 18: particle=24,176, parton=35,078
+  suffix 19: particle=24,176, parton=35,078
+  suffix 20: particle=24,176, parton=35,078
+  suffix 21: particle=24,176, parton=35,078
+  suffix 22: particle=24,176, parton=35,078
+  suffix 23: particle=24,176, parton=35,078
+  suffix 24: particle=24,176, parton=35,078
+  suffix 25: particle=24,176, parton=35,078
+  suffix 26: particle=24,176, parton=35,078
+  suffix 27: particle=24,176, parton=35,078
+  suffix 28: particle=24,176, parton=35,078
+  suffix 29: particle=24,176, parton=35,078
+
+First paired fragment: suffix 10
+Common branch names: 20
+ID-looking common branches:
+  EventNumber (class='', type='Int_t', scalar=False)
+  No common scalar integer/event-ID-like branch was found.
+
+Naive entry-number matching is definitely unsafe: corresponding particle/parton fragments contain different numbers of entries.
+VERDICT: No sufficiently unique common event identifier was found. Event-by-event particle/parton matching cannot be established from these ntuples using the available branches.

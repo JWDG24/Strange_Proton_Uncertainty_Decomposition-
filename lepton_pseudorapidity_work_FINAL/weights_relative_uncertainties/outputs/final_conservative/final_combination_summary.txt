@@ -1,0 +1,54 @@
+Conservative final W+c uncertainty combination
+==============================================
+
+Official final treatment:
+  nominal: repaired weighted-sample weight 0
+  statistical: independent ROOT Sumw2 ratio uncertainty
+  scale: relative envelope transferred as |C| * delta_scale
+  PDF: relative RMS transferred as |C| * delta_PDF
+  shower: relative envelope transferred as |C| * delta_shower
+  model: relative envelope transferred as |C| * delta_model
+  total: quadrature(stat, scale, PDF, shower, model)
+
+High-stat Pythia nominal used: False
+Reason: exploratory high-stat fragment validation found duplicated event content.
+
+Consistency checks:
+  Pythia_plus:
+    max nominal delta between correction/relative stages: 0.000e+00
+    max recomposition delta scale: 1.243e-10
+    max recomposition delta pdf: 1.389e-10
+    max recomposition delta shower: 2.410e-09
+    max recomposition delta model: 2.699e-10
+    max recomposition delta total: 1.655e-09
+    CSV:  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/csv/Pythia_plus_final_conservative.csv
+    ROOT: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/root/Pythia_plus_final_conservative.root
+  Pythia_minus:
+    max nominal delta between correction/relative stages: 0.000e+00
+    max recomposition delta scale: 1.651e-10
+    max recomposition delta pdf: 2.270e-10
+    max recomposition delta shower: 1.324e-09
+    max recomposition delta model: 3.347e-10
+    max recomposition delta total: 1.280e-09
+    CSV:  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/csv/Pythia_minus_final_conservative.csv
+    ROOT: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/root/Pythia_minus_final_conservative.root
+  Herwig_plus:
+    max nominal delta between correction/relative stages: 0.000e+00
+    max recomposition delta scale: 8.226e-11
+    max recomposition delta pdf: 8.236e-11
+    max recomposition delta shower: 0.000e+00
+    max recomposition delta model: 0.000e+00
+    max recomposition delta total: 7.919e-10
+    CSV:  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/csv/Herwig_plus_final_conservative.csv
+    ROOT: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/root/Herwig_plus_final_conservative.root
+  Herwig_minus:
+    max nominal delta between correction/relative stages: 0.000e+00
+    max recomposition delta scale: 1.349e-10
+    max recomposition delta pdf: 1.339e-10
+    max recomposition delta shower: 0.000e+00
+    max recomposition delta model: 0.000e+00
+    max recomposition delta total: 9.178e-10
+    CSV:  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/csv/Herwig_minus_final_conservative.csv
+    ROOT: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/root/Herwig_minus_final_conservative.root
+
+Interactive: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/interactive/final_conservative_corrections.html

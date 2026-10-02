@@ -1,0 +1,89 @@
+Odd/even statistical stability study
+====================================
+
+Event split:
+  even = ROOT tree entry indices 0, 2, 4, ...
+  odd  = ROOT tree entry indices 1, 3, 5, ...
+
+Physics selection:
+  MET > 25.0 GeV
+  lepton pT > 20.0 GeV
+  |eta_lepton| < 2.5
+  m_T^W > 40.0 GeV
+  jet pT > 25.0 GeV
+  |eta_jet| < 2.5
+  exactly one charm-identified fiducial jet
+  charm ID: jet_charge != 0
+  extra non-charm jets allowed
+  OS = +1, SS = -1 from leptons_charge * jet_charge
+
+Nominal weight:
+  weightvec[0]
+
+Split quantity:
+  abs_difference = |C_odd - C_even|
+  split_stat_uncertainty = abs_difference / 2
+
+Cut flow and accepted-event counts:
+  WCH7minus:
+    entries=49997
+    after_lepton_met=49997
+    after_mtw=49997
+    after_wcjet=26395
+    OS=26342, SS=53
+    odd=13177, even=13218
+  WCH7plus:
+    entries=50292
+    after_lepton_met=50292
+    after_mtw=50292
+    after_wcjet=26604
+    OS=26518, SS=86
+    odd=13331, even=13273
+  WCHPartonminus:
+    entries=72252
+    after_lepton_met=47179
+    after_mtw=45076
+    after_wcjet=25014
+    OS=24953, SS=61
+    odd=12527, even=12487
+  WCHPartonplus:
+    entries=71984
+    after_lepton_met=47287
+    after_mtw=45162
+    after_wcjet=25172
+    OS=25147, SS=25
+    odd=12629, even=12543
+  WCPy8minus:
+    entries=49666
+    after_lepton_met=49666
+    after_mtw=49666
+    after_wcjet=28563
+    OS=28432, SS=131
+    odd=14275, even=14288
+  WCPy8plus:
+    entries=49475
+    after_lepton_met=49475
+    after_mtw=49475
+    after_wcjet=28113
+    OS=27990, SS=123
+    odd=14106, even=14007
+  WCPyPartonminus:
+    entries=72084
+    after_lepton_met=47530
+    after_mtw=45986
+    after_wcjet=30367
+    OS=30367, SS=0
+    odd=15307, even=15060
+  WCPyPartonplus:
+    entries=72191
+    after_lepton_met=47688
+    after_mtw=46063
+    after_wcjet=30460
+    OS=30460, SS=0
+    odd=15201, even=15259
+
+Generated pair outputs:
+  Pythia_plus
+  Pythia_minus
+  Herwig_plus
+  Herwig_minus

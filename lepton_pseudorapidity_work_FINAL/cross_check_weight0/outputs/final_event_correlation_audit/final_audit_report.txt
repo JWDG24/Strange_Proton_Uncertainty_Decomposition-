@@ -1,0 +1,226 @@
+
+============================================================
+ FINAL EVENT-MATCHING + CORRELATED-STAT AUDIT
+============================================================
+
+This script independently validates:
+  - fragment/EventNumber matching
+  - wrong-fragment identity control
+  - repaired W+c event selection
+  - central correction reproduction
+  - analytic covariance uncertainty
+  - fresh paired Poisson bootstrap
+  - agreement with saved analysis outputs
+
+
+==============================================================================
+Pythia W+ FINAL AUDIT
+==============================================================================
+Particle fragments: 20
+Parton fragments:   20
+Suffix sets identical: True
+Particle entries: 502,383
+Parton entries:   725,220
+  suffix 10: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 11: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 12: raw overlap= 21830, selected particle= 14151, parton= 15410
+  suffix 13: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 14: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 15: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 16: raw overlap= 21830, selected particle= 14151, parton= 15410
+  suffix 17: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 18: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 19: raw overlap= 21830, selected particle= 14151, parton= 15410
+  suffix 20: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 21: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 22: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 23: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 24: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 25: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 26: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 27: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 28: raw overlap= 22031, selected particle= 14294, parton= 15410
+  suffix 29: raw overlap= 22031, selected particle= 14294, parton= 15410
+
+Composite-key structure:
+  particle keys unique: True (502,383)
+  parton keys unique:   True (725,220)
+  matched keys:         440,017
+  particle overlap:     87.5860%
+  parton overlap:       60.6736%
+
+Event-identity evidence:
+  metric                  correct pair          wrong-fragment control
+  weight0                r= -1.0000, exact=  1.0000    r= -1.0000, exact=  1.0000
+  leptons_pt             r=  0.8921, exact=  0.0000    r=  0.8921, exact=  0.0000
+  leptons_eta            r= -0.0076, exact=  0.0000    r= -0.0076, exact=  0.0000
+  met_et                 r=  0.4851, exact=  0.0000    r=  0.4851, exact=  0.0000
+  leptons_phi            <cos dphi>=  0.9815, exact=  0.0000    <cos dphi>=  0.9815, exact=  0.0000
+  leptons_charge         equal=  0.9999                equal=  0.9999
+
+Identity-control verdict:
+  INCONCLUSIVE: correct matching does not sufficiently outperform the wrong-fragment control.
+
+Repaired-selection reproduction:
+  particle selected: 285,451 (OS=284,330, SS=1,121)
+  parton selected:   308,200 (OS=308,200, SS=0)
+  selected on both:  191,162
+  same eta bin:      117,188
+  different eta bin: 73,974
+  Fresh audit bootstrap: 1000 replicas (seed 987654)
+    replica    1/1000
+    replica  100/1000
+    replica  200/1000
+    replica  300/1000
+    replica  400/1000
+    replica  500/1000
+    replica  600/1000
+    replica  700/1000
+    replica  800/1000
+    replica  900/1000
+    replica 1000/1000
+
+Existing-output comparison:
+  central correction vs cross_check_weight0: max |delta| = 3.519e-04
+  saved central correction: max |delta| = 0.000e+00
+  saved independent stat:   max relative delta = 0.00%
+  saved analytic stat:      max relative delta = 0.00%
+  saved bootstrap stat:     max relative delta = 7.38% (fresh independent audit seed)
+
+Bin-by-bin uncertainty audit:
+  eta bin        independent      analytic-cov      fresh bootstrap    boot/ind    analytic/boot
+  0.00-0.21     0.00548198     0.00378214       0.00383969     0.7004        0.9850
+  0.21-0.42     0.00581628     0.00439799       0.00451362     0.7760        0.9744
+  0.42-0.63     0.00567208     0.00441195        0.0045286     0.7984        0.9742
+  0.63-0.84     0.00599022     0.00467104       0.00474364     0.7919        0.9847
+  0.84-1.05     0.00603822     0.00481734       0.00500905     0.8296        0.9617
+  1.05-1.37     0.00515708     0.00389606       0.00392546     0.7612        0.9925
+  1.37-1.52     0.00837802      0.0071243       0.00718264     0.8573        0.9919
+  1.52-1.74     0.00710183     0.00587456       0.00580701     0.8177        1.0116
+  1.74-1.95     0.00872484     0.00729221       0.00745374     0.8543        0.9783
+  1.95-2.18     0.00839986     0.00693892       0.00688236     0.8193        1.0082
+  2.18-2.50     0.00959601     0.00769599       0.00797889     0.8315        0.9645
+
+Analytic covariance vs fresh paired bootstrap:
+  mean relative difference: 1.93%
+  max relative difference:  3.83%
+
+FINAL CHANNEL VERDICT:
+  structure / uniqueness:       PASS
+  event-identity control:        INCONCLUSIVE
+  central correction reproduce: FAIL
+  analytic covariance reproduce: PASS
+  bootstrap stability:          PASS
+  covariance coefficients sane: PASS
+  OVERALL: REVIEW REQUIRED
+Audit CSV: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/cross_check_weight0/outputs/final_event_correlation_audit/csv/Pythia_plus_final_audit.csv
+
+==============================================================================
+Pythia W- FINAL AUDIT
+==============================================================================
+Particle fragments: 20
+Parton fragments:   20
+Suffix sets identical: True
+Particle entries: 483,480
+Parton entries:   701,560
+  suffix 10: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 11: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 12: raw overlap= 21020, selected particle= 14135, parton= 15023
+  suffix 13: raw overlap= 21020, selected particle= 14135, parton= 15023
+  suffix 14: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 15: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 16: raw overlap= 21020, selected particle= 14135, parton= 15023
+  suffix 17: raw overlap= 21020, selected particle= 14135, parton= 15023
+  suffix 18: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 19: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 20: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 21: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 22: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 23: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 24: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 25: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 26: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 27: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 28: raw overlap= 21095, selected particle= 14133, parton= 15023
+  suffix 29: raw overlap= 21095, selected particle= 14133, parton= 15023
+
+Composite-key structure:
+  particle keys unique: True (483,480)
+  parton keys unique:   True (701,560)
+  matched keys:         421,600
+  particle overlap:     87.2011%
+  parton overlap:       60.0946%
+
+Event-identity evidence:
+  metric                  correct pair          wrong-fragment control
+  weight0                r= -1.0000, exact=  1.0000    r= -1.0000, exact=  1.0000
+  leptons_pt             r=  0.8977, exact=  0.0000    r=  0.8977, exact=  0.0000
+  leptons_eta            r=  0.0011, exact=  0.0000    r=  0.0011, exact=  0.0000
+  met_et                 r=  0.4925, exact=  0.0000    r=  0.4925, exact=  0.0000
+  leptons_phi            <cos dphi>=  0.9808, exact=  0.0000    <cos dphi>=  0.9808, exact=  0.0000
+  leptons_charge         equal=  1.0000                equal=  1.0000
+
+Identity-control verdict:
+  INCONCLUSIVE: correct matching does not sufficiently outperform the wrong-fragment control.
+
+Repaired-selection reproduction:
+  particle selected: 282,668 (OS=281,376, SS=1,292)
+  parton selected:   300,460 (OS=300,460, SS=0)
+  selected on both:  188,848
+  same eta bin:      113,928
+  different eta bin: 74,920
+  Fresh audit bootstrap: 1000 replicas (seed 987655)
+    replica    1/1000
+    replica  100/1000
+    replica  200/1000
+    replica  300/1000
+    replica  400/1000
+    replica  500/1000
+    replica  600/1000
+    replica  700/1000
+    replica  800/1000
+    replica  900/1000
+    replica 1000/1000
+
+Existing-output comparison:
+  central correction vs cross_check_weight0: max |delta| = 2.723e-04
+  saved central correction: max |delta| = 0.000e+00
+  saved independent stat:   max relative delta = 0.00%
+  saved analytic stat:      max relative delta = 0.00%
+  saved bootstrap stat:     max relative delta = 7.41% (fresh independent audit seed)
+
+Bin-by-bin uncertainty audit:
+  eta bin        independent      analytic-cov      fresh bootstrap    boot/ind    analytic/boot
+  0.00-0.21      0.0058772     0.00411608       0.00416767     0.7091        0.9876
+  0.21-0.42     0.00574081     0.00440104       0.00445713     0.7764        0.9874
+  0.42-0.63     0.00594555     0.00462886       0.00456913     0.7685        1.0131
+  0.63-0.84     0.00577417     0.00446123       0.00451275     0.7815        0.9886
+  0.84-1.05     0.00592156     0.00468751       0.00475725     0.8034        0.9853
+  1.05-1.37     0.00510441     0.00387437       0.00392738     0.7694        0.9865
+  1.37-1.52      0.0077741     0.00667971       0.00677177     0.8711        0.9864
+  1.52-1.74      0.0074699     0.00609159        0.0062818     0.8409        0.9697
+  1.74-1.95     0.00837224      0.0069463       0.00674303     0.8054        1.0301
+  1.95-2.18     0.00810249     0.00665823       0.00691621     0.8536        0.9627
+  2.18-2.50     0.00792004     0.00635814       0.00656319     0.8287        0.9688
+
+Analytic covariance vs fresh paired bootstrap:
+  mean relative difference: 2.00%
+  max relative difference:  3.73%
+
+FINAL CHANNEL VERDICT:
+  structure / uniqueness:       PASS
+  event-identity control:        INCONCLUSIVE
+  central correction reproduce: FAIL
+  analytic covariance reproduce: PASS
+  bootstrap stability:          PASS
+  covariance coefficients sane: PASS
+  OVERALL: REVIEW REQUIRED
+Audit CSV: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/cross_check_weight0/outputs/final_event_correlation_audit/csv/Pythia_minus_final_audit.csv
+
+==============================================================================
+GLOBAL FINAL AUDIT VERDICT
+==============================================================================
+  Pythia W+: REVIEW REQUIRED
+  Pythia W-: REVIEW REQUIRED
+
+  OVERALL: REVIEW REQUIRED

@@ -1,0 +1,61 @@
+Repaired high-statistics Pythia weight-0 cross-check
+==================================================
+
+Selection:
+  MET > 25.0 GeV
+  lepton pT > 20.0 GeV
+  |eta_lepton| < 2.5
+  m_T^W > 40.0 GeV
+  jet pT > 25.0 GeV
+  |eta_jet| < 2.5
+  exactly one charm-identified fiducial jet
+  charm ID: jet_charge != 0
+  extra non-charm jets allowed
+  OS = +1, SS = -1 from leptons_charge * jet_charge
+
+Weight:
+  weightvec[0] only
+
+Reference policy:
+  only repaired reference CSVs in the same working tree are accepted
+  reference directory: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/MTWcut_build_corrections_etalepton_csv
+
+Discovered ROOT fragments:
+  WCPy8plus: 20
+  WCPy8minus: 20
+  WCPyPartonplus: 20
+  WCPyPartonminus: 20
+
+Processed samples:
+  WCPy8plus:
+    entries=502383
+    after_lepton_met=502383
+    after_mtw=502383
+    after_wcjet=285451
+    OS=284330, SS=1121
+  WCPy8minus:
+    entries=483480
+    after_lepton_met=483480
+    after_mtw=483480
+    after_wcjet=282668
+    OS=281376, SS=1292
+  WCPyPartonplus:
+    entries=725220
+    after_lepton_met=480380
+    after_mtw=465020
+    after_wcjet=308200
+    OS=308200, SS=0
+  WCPyPartonminus:
+    entries=701560
+    after_lepton_met=463040
+    after_mtw=447220
+    after_wcjet=300460
+    OS=300460, SS=0
+
+High-statistics correction pairs produced:
+  Pythia_plus
+  Pythia_minus
+
+Repaired-reference comparisons completed:
+  Pythia_plus
+  Pythia_minus

@@ -1,0 +1,27 @@
+Dashboard input validation
+==========================
+
+Pythia_plus
+-----------
+  max final/correction central-value difference: 0.000e+00
+  max total-uncertainty closure difference: 9.714e-17
+  variations: scale=8, PDF=282, shower=22, model=4
+
+Pythia_minus
+------------
+  max final/correction central-value difference: 0.000e+00
+  max total-uncertainty closure difference: 9.021e-17
+  variations: scale=8, PDF=282, shower=22, model=4
+
+Herwig_plus
+-----------
+  max final/correction central-value difference: 0.000e+00
+  max total-uncertainty closure difference: 6.592e-17
+  variations: scale=8, PDF=275, shower=0, model=0
+
+Herwig_minus
+------------
+  max final/correction central-value difference: 0.000e+00
+  max total-uncertainty closure difference: 6.592e-17
+  variations: scale=8, PDF=275, shower=0, model=0
+

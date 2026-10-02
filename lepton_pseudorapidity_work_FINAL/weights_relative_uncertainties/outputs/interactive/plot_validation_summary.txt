@@ -1,0 +1,55 @@
+Repaired relative-systematics plotting validation
+================================================
+
+Input relative-systematics directory:
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/csv
+
+Official conservative comparison directory:
+  /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/final_conservative/csv
+
+High-stat/event-matching nominal used: False
+
+Pythia_plus
+-----------
+  variations: scale=8, pdf=282, shower=22, model=4
+  max summary quadrature delta: 1.804e-09
+  max per-weight shift delta: 3.200e-09
+  max per-weight ratio delta: 2.220e-16
+  max per-weight nominal delta: 0.000e+00
+  max per-weight percent delta: 3.200e-07
+  max final-conservative comparison delta: 1.804e-07
+
+Pythia_minus
+------------
+  variations: scale=8, pdf=282, shower=22, model=4
+  max summary quadrature delta: 1.811e-09
+  max per-weight shift delta: 1.844e-09
+  max per-weight ratio delta: 2.220e-16
+  max per-weight nominal delta: 0.000e+00
+  max per-weight percent delta: 1.844e-07
+  max final-conservative comparison delta: 1.811e-07
+
+Herwig_plus
+-----------
+  variations: scale=8, pdf=275, shower=0, model=0
+  max summary quadrature delta: 2.043e-10
+  max per-weight shift delta: 4.472e-10
+  max per-weight ratio delta: 2.220e-16
+  max per-weight nominal delta: 0.000e+00
+  max per-weight percent delta: 4.472e-08
+  max final-conservative comparison delta: 2.043e-08
+
+Herwig_minus
+------------
+  variations: scale=8, pdf=275, shower=0, model=0
+  max summary quadrature delta: 2.125e-10
+  max per-weight shift delta: 3.906e-10
+  max per-weight ratio delta: 2.220e-16
+  max per-weight nominal delta: 0.000e+00
+  max per-weight percent delta: 3.906e-08
+  max final-conservative comparison delta: 2.125e-08
+
+Outputs:
+  decomposition: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/interactive/relative_uncertainty_decomposition.html
+  weight responses: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/interactive/relative_weight_responses.html
+  dashboard: /mnt/c/Users/dugar/uncertainty_decomposition/lepton_pseudorapidity_work_FINAL/weights_relative_uncertainties/outputs/interactive/relative_uncertainties_dashboard.html

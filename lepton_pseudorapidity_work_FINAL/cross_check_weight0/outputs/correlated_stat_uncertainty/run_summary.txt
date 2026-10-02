@@ -1,0 +1,47 @@
+Correlation-aware statistical uncertainty study
+===============================================
+
+Event matching key:
+  (fragment suffix, EventNumber)
+
+Central correction:
+  unchanged; all selected particle and parton events are retained
+
+Statistical methods:
+  independent ratio uncertainty
+  covariance-aware delta method
+  paired Poisson bootstrap
+
+Bootstrap replicas: 1000
+Bootstrap seed: 12345
+
+Pythia_plus
+-----------
+  particle_total_entries: 502383
+  parton_total_entries: 725220
+  raw_matched_keys: 440017
+  particle_selected: 285451
+  parton_selected: 308200
+  selected_on_both: 191162
+  selected_same_eta_bin: 117188
+  selected_different_eta_bin: 73974
+  particle_os: 284330
+  particle_ss: 1121
+  parton_os: 308200
+  parton_ss: 0
+
+Pythia_minus
+------------
+  particle_total_entries: 483480
+  parton_total_entries: 701560
+  raw_matched_keys: 421600
+  particle_selected: 282668
+  parton_selected: 300460
+  selected_on_both: 188848
+  selected_same_eta_bin: 113928
+  selected_different_eta_bin: 74920
+  particle_os: 281376
+  particle_ss: 1292
+  parton_os: 300460
+  parton_ss: 0
+

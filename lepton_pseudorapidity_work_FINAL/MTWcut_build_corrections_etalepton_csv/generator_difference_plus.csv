@@ -1,0 +1,12 @@
+charge,observable,bin,bin_low_edge,bin_up_edge,absolute_pythia_herwig_difference
+plus,etalepton,1,0.0,0.21,0.13366657495498657
+plus,etalepton,2,0.21,0.42,0.06972754001617432
+plus,etalepton,3,0.42,0.63,0.05099213123321533
+plus,etalepton,4,0.63,0.84,0.02246880531311035
+plus,etalepton,5,0.84,1.05,0.10468477010726929
+plus,etalepton,6,1.05,1.37,0.10245639085769653
+plus,etalepton,7,1.37,1.52,0.030692577362060547
+plus,etalepton,8,1.52,1.74,0.10719901323318481
+plus,etalepton,9,1.74,1.95,0.1165076494216919
+plus,etalepton,10,1.95,2.18,0.12090957164764404
+plus,etalepton,11,2.18,2.5,0.096507728099823
